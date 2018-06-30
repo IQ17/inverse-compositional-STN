@@ -19,7 +19,7 @@ def set(training):
 	parser.add_argument("--pertScale",	type=float,	default=0.25,			help="initial perturbation scale")
 	parser.add_argument("--transScale",	type=float,	default=0.25,			help="initial translation scale")
 	if training: # training
-		parser.add_argument("--batchSize",	type=int,	default=100,	help="batch size for SGD")
+		parser.add_argument("--batchSize",	type=int,	default=30,	help="batch size for SGD")
 		parser.add_argument("--lrC",		type=float,	default=1e-2,	help="learning rate (classification network)")
 		parser.add_argument("--lrCdecay",	type=float,	default=1.0,	help="learning rate decay (classification network)")
 		parser.add_argument("--lrCstep",	type=int,	default=100000,	help="learning rate decay step size (classification network)")
